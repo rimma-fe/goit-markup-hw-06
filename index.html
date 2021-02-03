@@ -379,18 +379,10 @@
                 </a>
             </li>
         </ul>
-        </div>
-        <p class="signup-text">Подпишитесь на рассылку</p>
-        <div class="signup-container"> 
-        <form  class="form" name="signup_form" autocomplete="on" novalidate>
-            <label class="email-label">
-                Email
-                <input type="email" name="email" />
-                
-            </label>
-        
-            <button type="submit" class="signup-button">Подписаться</button>
-        </form>
+        </div>  
+        <div class="sign-button-container">
+        <button class="sign-button">Подписаться</button>
+        <span class="icon-send"></span>
         </div>
         </section>
         
@@ -401,32 +393,64 @@
     <div  class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button class="close-button" type="button" data-modal-close></button> 
-            <div class="data-form">
-                <b>Оставьте свои данные, мы вам перезвоним</b>
-            <form class="data-form">
             
-            <div class="form-field">
-            <label for="name" class="">Имя</label>
-            <input  type="text"  name="name" id="name" class="form-input"/>
-            </div>
-            <div class="form-field">
-                <label for="tel-number">Телефон</label>
-                <input type="tel" name="tel" id="tel-number" class="form-input"/>
-            </div>
-            
-            <div class="form-field">
-                <label for="leave-comment">Комментарий</label>
-                <textarea name="tel" id="leave-comment"></textarea>
-            </div>
-            <div class="form-field">
-                <input type="checkbox" name="policy" id="policy"/>
-                <label for="policy"><a href="">Соглашаюсь с рассылкой и принимаю <span>Условия договора</span></a></label>
-            </div>
-            
-                <button type="submit">Отправить</button>
+            <form class="form" autocomplete="off" novalidate>
+                <div class="form-text">
+                    <b class="call-to-action">Оставьте свои данные, мы вам перезвоним</b>
                 </div>
+                <div class="form-field">
+            <label>
+                Имя
+                <div class="form-icon-container">
+                <input class="form-input" type="text" name="username" placeholder="Иван Иванович" />
+                <svg class="form-icon person" width="18px" height="18px">
+                    <use href="./images/sprite-icons.svg#icon-person-black-18dp-1"></use>
+                </svg>
+                </div>
+            </label>
+            </div>
+            <div class="form-field">
+            <label>
+                Телефон
+                <div class="form-icon-container">
+                <input class="form-input" type="tel" name="phone_number" placeholder=""/>
+                <svg class="form-icon phone-i" width="18px" height="18px">
+                    <use href="./images/sprite-icons.svg#icon-phone-black-18dp-1"></use>
+                </svg>
+                </div>
+            </label>
+            </div>
+            <div class="form-field">
+            <label>
+                Почта
+                <div class="form-icon-container">
+                <input class="form-input" type="email" name="email" placeholder=""/>
+                <svg class="form-icon email-i" width="18px" height="18px">
+                    <use href="./images/sprite-icons.svg#icon-email-black-18dp-1"></use>
+                </svg>
+                </div>
+            </label>
+            </div>
+            <div class="form-field">
+            <label>
+                Комментарий
+                <textarea class="comment" name="feedback" rows="5" placeholder=""></textarea>
+            </label>
+            </div>
+            <div class="field-check">
+                <label class="checkbox-label">
+                    <div class="checkbox-icon-container">
+                    <input class="checkbox-input visually-hidden" type="checkbox" name="agree"/>
+                    <span class="checkbox-icon"></span>
+                    </div>
+                    <div class="text">Соглашаюсь с рассылкой и принимаю</div>
+                    <a class="contract-terms-link" href=""> Условия договора </a>
+                    
+                </label>
+            </div>
+            <button class="submit" type="submit">Отправить</button>
             </form>
-           </div>
+           
                 
         </div>
     </div>
