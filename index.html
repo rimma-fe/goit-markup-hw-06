@@ -337,6 +337,7 @@
     </main>
     <footer>
         <section class="footer-section">
+        <div class="general-footer-container">    
         <div class="footer-address">
             <a class="logo" lang="en" href="./index.html"><span class="logo-accent">Web</span>Studio</a>
             <address class="address">
@@ -380,10 +381,24 @@
             </li>
         </ul>
         </div>  
-        <div class="sign-button-container">
+        <div class="footer-signup-form">
+        <p class="call-to-subscribe">Подпишитесь на рассылку</p>
+        <form class="signup-form" autocomplete="off">
+        <div class="signup-field-button-container">
+            <div class="signup-field">   
+                <input type="email" class="signup-input" name="mail" id="signup-email"/>
+                <label  for="signup-email" class="signup-label">
+                    E-mail
+                </label>
+            </div>
+        </form>
+       <div class="sign-button-container">
         <button class="sign-button">Подписаться</button>
         <span class="icon-send"></span>
         </div>
+   </div>
+        </div>
+    </div>
         </section>
         
     </footer>
@@ -434,7 +449,7 @@
             <div class="form-field">
             <label>
                 Комментарий
-                <textarea class="comment" name="feedback" rows="5" placeholder=""></textarea>
+                <textarea class="comment" name="feedback" rows="5" placeholder="Введите текст"></textarea>
             </label>
             </div>
             <div class="field-check">
@@ -444,11 +459,10 @@
                     <span class="checkbox-icon"></span>
                     </div>
                     <div class="text">Соглашаюсь с рассылкой и принимаю</div>
-                    <a class="contract-terms-link" href=""> Условия договора </a>
-                    
+                    <a class="contract-terms-link" href=""> Условия договора </a> 
                 </label>
             </div>
-            <button class="submit" type="submit">Отправить</button>
+            <button class="send-form" type="submit">Отправить</button>
             </form>
            
                 
