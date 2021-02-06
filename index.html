@@ -386,18 +386,18 @@
         <form class="signup-form" autocomplete="off">
         <div class="signup-field-button-container">
             <div class="signup-field">   
-                <input type="email" class="signup-input" name="mail" id="signup-email"/>
+                <input type="email" class="signup-input" name="mail" id="signup-email" placeholder="E-mail"/>
                 <label  for="signup-email" class="signup-label">
-                    E-mail
+                    
                 </label>
             </div>
-        </form>
+            </form>
        <div class="sign-button-container">
         <button class="sign-button">Подписаться</button>
         <span class="icon-send"></span>
         </div>
-   </div>
         </div>
+    </div>
     </div>
         </section>
         
@@ -414,8 +414,8 @@
                     <b class="call-to-action">Оставьте свои данные, мы вам перезвоним</b>
                 </div>
                 <div class="form-field">
-            <label>
-                Имя
+            <label class="form-label">
+               <span class="label-text">Имя</span> 
                 <div class="form-icon-container">
                 <input class="form-input" type="text" name="username" placeholder="Иван Иванович" />
                 <svg class="form-icon person" width="18px" height="18px">
@@ -423,9 +423,9 @@
                 </svg>
                 </div>
             </label>
-            </div>
-            <div class="form-field">
-            <label>
+        </div>         
+           <div class="form-field">
+            <label class="form-label">
                 Телефон
                 <div class="form-icon-container">
                 <input class="form-input" type="tel" name="phone_number" placeholder=""/>
@@ -436,7 +436,7 @@
             </label>
             </div>
             <div class="form-field">
-            <label>
+            <label class="form-label">
                 Почта
                 <div class="form-icon-container">
                 <input class="form-input" type="email" name="email" placeholder=""/>
@@ -447,7 +447,7 @@
             </label>
             </div>
             <div class="form-field">
-            <label>
+            <label class="form-label">
                 Комментарий
                 <textarea class="comment" name="feedback" rows="5" placeholder="Введите текст"></textarea>
             </label>
